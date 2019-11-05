@@ -1,8 +1,15 @@
-section.homepage-news.news
+---
+title: Shri Hembrij Agro Industries | About
+---
+
+section.hero style=background_image(image_path(data.pages.home.hero.image))
+  .caption
+    .row
+      h1 = About Us
+
+section.homepage-story
   .container
-    h2
-      | Latest Offers
-    .news-items
-      //get the first two most recent posts
-      - blog.articles.each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
+    .row
+      .story-content
+        = markdown data.pages.home.story
+
