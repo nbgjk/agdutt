@@ -3,5 +3,5 @@ nav_items:
   - {label: 'About', path: '/about'}
   - {label: 'Products', path: '/products/'}
   - {label: 'Latest Offers', path: '/news'}
-  - {label: 'Contact Us', path: '/contact'}
+  - {label: 'Contact Now', path: '/contact'}
 
