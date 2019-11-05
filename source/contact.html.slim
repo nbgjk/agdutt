@@ -1,6 +1,17 @@
-section.homepage-news.news
+---
+title: Shri Hembrij Agro Industries | Contact Us
+---
+
+
+section.homepage-products.products
   .container
     h2
-      | Contact 
-     .subtitle
-       h2 = "We’d love to get in touch with you and hear your ideas and questions. We strive to grow and improve constantly and your feedback is valuable for us."
+      | Products
+    .row
+      //product is structured: ['filename', 'data']
+      //sort by newest product
+      - data.products.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | product |
+
+        //to get the actual data:
+        = partial 'partials/products/product', locals: {product: product[1]}
+
