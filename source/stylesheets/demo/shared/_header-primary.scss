@@ -6,8 +6,11 @@
   z-index: 999;
 
   .logo {
-    width: 45px;
-    height:45px;
+    width: 173px;
+    height: 80px;
+    img{
+    display:none;
+    }
     a {
       display: block;
       padding: 26px 30px;
